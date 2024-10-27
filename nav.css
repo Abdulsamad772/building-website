@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS';
+    line-height: 1.5;
+}
+p,button{
+    font-family: serif;
+}
+nav{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 10%;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(173, 173, 173);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: white;
+    transition: 0.2s ease-in;
+}
+nav ul li .active{
+    color: rgb(166, 88, 88);
+}
+nav .nav__btns{
+    display: flex;
+    gap: 15px;
+}
+nav .nav__btns .nav__btns-1{
+    background-color: brown;
+    color: silver;
+}
+nav .nav__btns .nav__btns-2{
+    color: gold;
+    background-color:gray;
+
+}
+nav .nav__btns a{
+    padding: 6px 14px;
+    border-radius: 3%;
+}
+nav .nav__btns a:hover{
+    background-color: rgba(255, 255, 255, 0.138);
+    transition: 0.3s ease-in;
+}
+/* MAIN CONTENT */
+main{
+    min-height: 80vh;
+    /* background-image: linear-gradient(270deg, grey,black,rgba(0, 0, 255, 0.1)); */
+    background-image:linear-gradient(255deg, rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url(./img/GOOD\ HTML.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+main h1{
+    font-size: 3em;
+}
+main p{
+    width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: lightgray;
+    margin: 1.2em 0;
+
+}
+main a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    font-weight: bold;
+    padding: 8px 25px;
+    margin-top: 1.5em;
+}
+main a:hover{
+    background-color:rgb(213, 182, 6);
+    cursor: pointer;
+}
+
+/* our services */
+.our__section{
+    background-color: azure;
+    padding: 2em 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our__section header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our__section header h1{
+    font-size: 3em;
+}
+.our__section header p{
+    width: 70%;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center;
+    color: grey;
+}
+.main__services{
+    display: flex;
+    gap: 2em;
+    margin: 3em 0;
+}
+.main__services div{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    padding: 1em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__services div:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.main__services div .fab{
+    font-size: 3em;
+    color: darkolivegreen;
+}
+.main__services div h2{
+    margin: 1em 0;
+}
+.main__services div p{
+    color: grey;
+    text-align: justify;
+}
+.our__section a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    font-weight: bold;
+    padding: 8px 25px;
+    margin-top: 1.5em;
+}
+.our__section a:hover{
+    background-color:rgb(213, 182, 6);
+    cursor: pointer;
+}
+.about__us{
+    display: flex;
+    gap: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 7em;
+    align-items: center;
+}
+.about__us-2{
+    width: 60%;
+    height: 600px;
+    background-image: url(./img/illustrator.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.about__us-1{
+    width: 45%;
+}
+.about__us-1 h2{
+    font-size: 3em;
+}
+.about__us-1 p{
+    color: grey;
+    text-align: justify;
+    margin: 2em 0;
+    font-size: 1em;
+}
+.about__us-1 a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    font-weight: bold;
+    padding: 8px 25px;
+    margin-top: 1.5em;
+    }
+.about__us-1 a:hover{
+        background-color:rgb(213, 182, 6);
+        cursor: pointer;
+    }
+
+     .stats__parent{
+    background-color: yellow;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats__parent h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+        /* PHOTOS */
+    .photos{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 8%;
+        background-color: cadetblue;
+    }
+    .photos .photo-1{
+        background-image: url(./img/illustrator.png);
+        background-size: cover;
+        background-position: center;
+        width: 20%;
+        height: 300px;
+    }
+    .photos .photo-2{
+        background-image: url(./img/microsoft.png);
+        background-size: cover;
+        background-position: center;
+        width: 20%;
+        height: 300px;
+    }
+    .photos .photo-3{
+        background-image: url(./img/GOOD\ HTML.png);
+        background-size: cover;
+        background-position: center;
+        width: 20%;
+        height: 300px;
+    }
+
+    .pics{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 8%;
+        background-color: rgb(18, 161, 58);
+    }
+    .pics .pics-1{
+        background-image: url(./img/illustrator.png);
+        background-size: cover;
+        background-position: center;
+        width: 20%;
+        height: 300px;
+    }
+    .pics .pics-2{
+        background-image: url(./img/illustrator.png);
+        background-size: cover;
+        background-position: center;
+        width: 20%;
+        height: 300px;
+    }
+    .pics .pics-3{
+        background-image: url(./img/microsoft.png );
+        background-size: cover;
+        background-position: center;
+        width: 20%;
+        height: 300px;
+    }
+
+    .pricing{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .pricing div{
+        width: 40%;
+        background-color: lightblue;
+        padding: 30px 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .pricing div h2{
+        color: rgba(255, 217, 0, 0.726);
+    }
+
+    .overall{
+        display: flex;
+    }
+    .overall .img{
+        background-image: url(./img/GOOD\ HTML.png);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 300px;
+    }
+    .overall .contact{
+        background-color: black;
+        width: 50%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        background-color: #000;
+        color: beige;
+        padding: 17px 30px;
+    }
+    .contact h1 {
+        margin-bottom: 16px;
+        text-transform: capitalize;
+    }
+    .contact form input {
+        padding: 9px 8px;
+        width: 100%;
+        display: block;
+    }
+
+    
+    .contact a{
+    display: block;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    font-weight: bold;
+    padding: 8px 25px;
+    margin-top: 1.5em;
+    text-align: center;
+    }
+
+    .sec{
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10%;
+        align-items: center;
+    }
+    .sec .do-1{
+        color:#D5E68D;
+        font-weight: bold;
+        width: 30%;
+    }
+    .sec .do-2{
+        color: #D5E68D;
+        font-weight: bold;
+        width: 30%;
+    }   
+    .sec .do-3{
+        color: #D5E68D;
+        font-weight: bold;
+        width: 30%;
+    }
+    .sec .do-3 ul{
+        list-style: none;
+        gap: 40px;
+        color: #ACD7EC;
+    }
+    .sec ul li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
